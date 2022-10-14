@@ -13,11 +13,17 @@ export default {
   methods: {
     startPoints() {
       // send start to backend
-      if (this.active) console.log("start");
+      if (this.active) {
+        console.log("start");
+        // this.$socket.emit("raiseFinger", {
+        //   roomCode: 1324,
+        //   playerName: "Dennis",
+        // });
+      }
     },
     stopPoints() {
       // send Stop to backend
-      console.log("stop");
+      if (this.active) console.log("stop");
     },
   },
 };

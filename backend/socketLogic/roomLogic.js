@@ -24,7 +24,8 @@ export const PopulateSocket = (socket) => {
     socket.on("disconnect", () => {
       console.log("user disconnected");
     });
-    GameLogic(socket, parties);
+    // socket.use(GameLogic(socket, parties));
+    return socket
   }
 
 export const CreateRoom = (roomCode) => {
