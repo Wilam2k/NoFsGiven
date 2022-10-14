@@ -7,7 +7,7 @@ const io = new socketIO(server, {cors:{
     origin: '*',
 }});
 import cors from 'cors';
-import {PopulateSocket, CreateRoom} from './socket.js'
+import {PopulateSocket, CreateRoom} from './socketLogic/roomLogic.js'
 
 app.use(cors({ origin: '*'}));
 

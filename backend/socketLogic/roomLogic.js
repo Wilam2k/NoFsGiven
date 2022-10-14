@@ -1,6 +1,6 @@
 const parties = {};
-import EmitToParty from 'utils'
-import GameLogic from 'gameLogic'
+import {EmitToParty} from './utils.js'
+import {GameLogic} from './gameLogic.js'
 
 export const PopulateSocket = (socket) => {
     socket.on("joinRoom", (data) => {
