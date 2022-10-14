@@ -10,8 +10,9 @@ import cors from 'cors';
 import {PopulateSocket, CreateRoom} from './socket.js'
 
 app.use(cors({ origin: '*'}));
+
 app.get('/createRoom', (req, res) => {
-  const roomCode = Math.floor(Math.random() * 10000)
+  const roomCode = 'TomasPizzeria' + Math.floor(Math.random() * 100)
   CreateRoom(roomCode);
   res.send({roomCode: roomCode});
 });
